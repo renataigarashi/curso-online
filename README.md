@@ -1,2 +1,2 @@
-# curso-online
-Projeto desenvolvido duranteo o curso "Javascript: Primeiros passos da programação orientada a objetos" da Alura
+# Curso Online
+O objetivo do projeto é desenvolver uma plataforma de cursos online.
