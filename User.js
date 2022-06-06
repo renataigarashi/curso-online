@@ -1,18 +1,29 @@
-class User {
+export default class User {
+  //declaramos a propriedade que queremos tornar privada fora do construtor
+  #nome 
+  #email
+  #nascimento
+  #role
+  #ativo
   constructor (nome, email, nascimento, role, ativo = true) {
-    this.nome = nome;
-    this.email = email
-    this.nascimento = nascimento
-    this.role = role || 'estudante'
-    this.ativo = ativo
+    this.#nome = nome
+    this.#email = email
+    this.#nascimento = nascimento
+    this.#role = role || 'estudante'
+    this.#ativo = ativo
   }
+  #montaObjUser(){
+    return ({
+      nome: this.#nome,
+      email: this.#email ,
+      nascimento: this.#nascimento,
+      role: this.#role,
+      ativo:this.#ativo,
+    })
+  }
+
   exibirInfos() {
-    return `${this.nome}, ${this.email}`
+    const objUser = this.#montaObjUser()
+    return `${objUser.nome}, ${objUser.email}, ${objUser.nascimento}. ${objUser.role}, ${objUser.ativo}`
   }
 }
-
-const novoUser = new User('Renata', 'r@r.com', '1983/05/08')
-console.log(novoUser)
-console.log(novoUser.exibirInfos())
-
-console.log(User.prototype.isPrototypeOf(novoUser))

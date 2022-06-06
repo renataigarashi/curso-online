@@ -1,0 +1,21 @@
+{
+  "name": "tech-courses",
+  "version": "1.0.0",
+  "description": "O objetivo do projeto é desenvolver uma plataforma de cursos online.",
+  "type": "module",
+  "main": "User.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/renataigarashi/tech-courses.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/renataigarashi/tech-courses/issues"
+  },
+  "homepage": "https://github.com/renataigarashi/tech-courses#readme"
+}
