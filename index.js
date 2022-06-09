@@ -4,12 +4,11 @@ import User from "./User.js";
 
 const novoUser = new User('Renata', 'r@r.com', '1983/05/08')
 
-console.log(novoUser.exibirInfos())
+// console.log(novoUser.exibirInfos())
 
-const novoAdmin = new Admin('Mariana', 'm@m.com', '1990/10/10');
-console.log(novoAdmin.exibirInfos());
+// const novoAdmin = new Admin('Mariana', 'm@m.com', '1990/10/10');
 
-console.log(novoAdmin.nome)
+// console.log(novoAdmin.exibirInfos())
 
 // novoUser.#nome = "Creuza"
 // console.log(novoUser)
@@ -18,9 +17,12 @@ console.log(novoAdmin.nome)
 
 // console.log(" ============================== ")
 
-// const novoAdmin = new Admin('Renata', 'r@r.com', '1983/01/01');
-// console.log(novoAdmin)
-// console.log(novoAdmin.exibirInfos())
+ const novoAdmin = new Admin('Renata', 'r@r.com', '1983/01/01');
+
+//o get do nome não vai ser chamado como metodo, apesar de ser parecid com funcao
+console.log(novoAdmin.nome)
+novoAdmin.nome = "Re"
+console.log(novoAdmin.nome)
 // console.log(novoAdmin.criarCurso('Javascript', 20))
 
 // console.log(" ============================== ")
