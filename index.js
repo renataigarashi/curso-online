@@ -17,12 +17,18 @@ const novoUser = new User('Renata', 'r@r.com', '1983/05/08')
 
 // console.log(" ============================== ")
 
- const novoAdmin = new Admin('Renata', 'r@r.com', '1983/01/01');
+//  const novoAdmin = new Admin('Renata', 'r@r.com', '1983/01/01');
+//  console.log(novoAdmin.exibirInfos())
+
+ const novoDocente = new Docente('Fulaninha', 'f@f.com', '1990/02/03')
+console.log(novoDocente.exibirInfos())
 
 //o get do nome não vai ser chamado como metodo, apesar de ser parecid com funcao
-console.log(novoAdmin.nome)
-novoAdmin.nome = "Re"
-console.log(novoAdmin.nome)
+// console.log(novoAdmin.nome)
+// novoAdmin.nome = "Re"
+// console.log(novoAdmin.nome)
+
+
 // console.log(novoAdmin.criarCurso('Javascript', 20))
 
 // console.log(" ============================== ")
